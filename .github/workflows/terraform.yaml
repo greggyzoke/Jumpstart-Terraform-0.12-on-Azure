@@ -1,14 +1,14 @@
- name: 'Terraform GitHub Actions'
- defaults:
+name: 'Terraform GitHub Actions'
+defaults:
    run:
-     working-directory: "lecture7"
- on:
+     working-directory: "import"
+on:
    - pull_request
    - push
- jobs:
+jobs:
    terraform:
      name: 'Terraform'
-     runs-on: ubuntu-latest
+     runs-on: windows-latest
 
 
      env:
